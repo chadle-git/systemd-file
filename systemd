@@ -1,0 +1,12 @@
+[Unit]
+Description=EI MAS SQS Reader
+Requires=network.target
+
+[Service]
+Type=simple
+User=eiadmin
+WorkingDirectory=/home/eiadmin/ei-mas-sqs-reader
+ExecStart=/home/eiadmin/ei-mas-sqs-reader/ei-mas-sqs-reader
+
+[Install]
+WantedBy=multi-user.target
